@@ -993,6 +993,7 @@
             15% { transform: translate(-1px, -1px); }
             20% { transform: translate(1px, 1px); }
         }
+		
     </style>
 </head>
 <body>
@@ -1051,20 +1052,15 @@
                     </div>
                 </div>
                 
-                <div class="hero-photo">
-                    <div class="photo-frame">
-                        <div class="photo-placeholder">
-                            <i class="fas fa-user-astronaut"></i>
-                            <p>ZAID BENHADDA</p>
-                            <p style="font-size: 0.9rem; margin-top: 10px;">PHOTO PROFESSIONNELLE</p>
-                            <p style="font-size: 0.8rem; margin-top: 5px;">(À ajouter)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                """""
+				
     </section>
     
+
+
+
+
+</style>
     <!-- Compétences -->
     <section class="cyber-competences" id="competences">
         <div class="container">
@@ -1221,6 +1217,7 @@
             </div>
         </div>
     </section>
+	
     
     <!-- Contact -->
     <section class="cyber-contact" id="contact">
@@ -1313,12 +1310,99 @@
                 </div>
                 
                 <div class="copyright">
-                    <p>© 2024 ZAID BENHADDA - SYSTÈME PORTFOLIO v2.0 | TOUS DROITS RÉSERVÉS</p>
-                    <p style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> and <i class="fas fa-code" style="color: var(--primary);"></i></p>
+                    <p>©  ZAID BENHADDA -  PORTFOLIO</p>
+                    <p style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);"> <i class="fas fa-heart" style="color: var(--accent);"></i>  <i class="fas fa-code" style="color: var(--primary);"></i></p>
                 </div>
             </div>
         </div>
+		<button class="btn-travail" onclick="window.open('https://forms.gle/mNC1TwmFEU7KFPXx5', '_blank')">
+    <i class="fas fa-briefcase"></i>
+    Travail chez nous
+</button>
+
+<style>
+.btn-travail {
+    background: linear-gradient(45deg, #FFD700, #00FF9D);
+    color: #0A0A1A;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    min-width: 250px;
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { 
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 35px rgba(0, 255, 157, 0.7);
+        transform: scale(1.05);
+    }
+}
+
+.btn-travail:hover {
+    background: linear-gradient(45deg, #00FF9D, #FFD700);
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 0 40px rgba(0, 255, 157, 0.8);
+    animation: none;
+}
+
+.btn-travail:active {
+    transform: scale(0.98) translateY(0);
+}
+
+.btn-travail::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #FFD700, #00FF9D, #00D4FF);
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-travail:hover::before {
+    opacity: 1;
+    animation: rotate-border 3s linear infinite;
+}
+
+@keyframes rotate-border {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn-travail i {
+    font-size: 1.6rem;
+    transition: transform 0.3s;
+}
+
+.btn-travail:hover i {
+    transform: rotate(15deg) scale(1.2);
+}
+</style>
+	
     </footer>
+	
 
     <script>
         // Smooth scrolling for navigation links
